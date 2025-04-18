@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -7,8 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, Info } from "lucide-react";
+import OrderDialog from '@/components/OrderDialog';
 
-// Mock data for categories and their products
 const categories = [
   {
     id: 1,
@@ -151,8 +150,8 @@ const categories = [
 const CategoryDetail = () => {
   const { id } = useParams<{ id: string }>();
   const categoryId = parseInt(id || "0");
-  
   const category = categories.find(cat => cat.id === categoryId);
+  const [selectedProduct, setSelectedProduct] = React.useState<null | typeof categories[0]['products'][0]>(null);
   
   if (!category) {
     return (
@@ -236,7 +235,10 @@ const CategoryDetail = () => {
                   <p className="text-2xl font-bold">${product.price.toLocaleString()}</p>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-2">
-                  <Button className="w-full">
+                  <Button 
+                    className="w-full"
+                    onClick={() => setSelectedProduct(product)}
+                  >
                     <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
                   </Button>
                   <Button variant="outline" size="icon">
@@ -249,6 +251,13 @@ const CategoryDetail = () => {
         </div>
       </main>
       <Footer />
+      {selectedProduct && (
+        <OrderDialog
+          open={!!selectedProduct}
+          onOpenChange={(open) => !open && setSelectedProduct(null)}
+          product={selectedProduct}
+        />
+      )}
     </div>
   );
 };

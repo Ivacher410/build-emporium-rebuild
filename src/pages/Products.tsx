@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -6,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart, Info } from "lucide-react";
+import OrderDialog from '@/components/OrderDialog';
 
 const products = [
   {
@@ -65,6 +65,8 @@ const products = [
 ];
 
 const Products = () => {
+  const [selectedProduct, setSelectedProduct] = React.useState<null | typeof products[0]>(null);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -111,7 +113,10 @@ const Products = () => {
                   <p className="text-2xl font-bold">${product.price.toLocaleString()}</p>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-2">
-                  <Button className="w-full">
+                  <Button 
+                    className="w-full"
+                    onClick={() => setSelectedProduct(product)}
+                  >
                     <ShoppingCart className="mr-2 h-4 w-4" /> Add to Cart
                   </Button>
                   <Button variant="outline" size="icon">
@@ -124,6 +129,13 @@ const Products = () => {
         </div>
       </main>
       <Footer />
+      {selectedProduct && (
+        <OrderDialog
+          open={!!selectedProduct}
+          onOpenChange={(open) => !open && setSelectedProduct(null)}
+          product={selectedProduct}
+        />
+      )}
     </div>
   );
 };
