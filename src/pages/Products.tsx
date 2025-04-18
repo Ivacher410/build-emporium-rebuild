@@ -11,7 +11,7 @@ const products = [
   {
     id: 1,
     name: "CAT 336 Excavator",
-    image: "https://images.unsplash.com/photo-1593105541586-673816829b65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a",
     price: 225000,
     rating: 4.9,
     featured: true,
@@ -20,7 +20,7 @@ const products = [
   {
     id: 2,
     name: "Komatsu D61PXi Bulldozer",
-    image: "https://images.unsplash.com/photo-1578077610430-0afa55d1e4e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
     price: 175000,
     rating: 4.7,
     featured: true,
@@ -29,7 +29,7 @@ const products = [
   {
     id: 3,
     name: "Volvo L350H Wheel Loader",
-    image: "https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
     price: 310000,
     rating: 4.8,
     featured: true,
@@ -38,7 +38,7 @@ const products = [
   {
     id: 4,
     name: "Liebherr LTM 1450-8.1 Mobile Crane",
-    image: "https://images.unsplash.com/photo-1598233846284-ffa69a584bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
     price: 850000,
     rating: 4.9,
     featured: false,
@@ -47,7 +47,7 @@ const products = [
   {
     id: 5,
     name: "Hitachi ZX350LC-6 Excavator",
-    image: "https://images.unsplash.com/photo-1563606618307-996ee17cbae8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
     price: 195000,
     rating: 4.6,
     featured: false,
@@ -56,7 +56,7 @@ const products = [
   {
     id: 6,
     name: "Bobcat S650 Skid-Steer Loader",
-    image: "https://images.unsplash.com/photo-1563606857-e15f6f72815d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
     price: 42000,
     rating: 4.5,
     featured: false,

@@ -1,10 +1,17 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="hero-image w-full h-[600px] flex items-center justify-center text-white">
+    <div 
+      className="hero-image w-full h-[600px] flex items-center justify-center text-white"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625')`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
+      }}
+    >
       <div className="container px-4 md:px-6 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-4">
           Premium Construction Equipment

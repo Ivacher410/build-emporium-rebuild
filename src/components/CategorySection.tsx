@@ -7,25 +7,25 @@ const categories = [
   {
     id: 1,
     name: "Excavators",
-    image: "https://images.unsplash.com/photo-1593105541586-673816829b65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
     description: "Powerful digging machines for all terrains"
   },
   {
     id: 2,
     name: "Bulldozers",
-    image: "https://images.unsplash.com/photo-1578077610430-0afa55d1e4e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
     description: "Heavy-duty earth moving equipment"
   },
   {
     id: 3,
     name: "Loaders",
-    image: "https://images.unsplash.com/photo-1569880153113-76e33fc52d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc",
     description: "Versatile loading and material handling"
   },
   {
     id: 4,
     name: "Cranes",
-    image: "https://images.unsplash.com/photo-1598233846284-ffa69a584bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80",
+    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
     description: "Lifting solutions for construction projects"
   }
 ];
